@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+    <div class="jumbotron">
+        <center><h1>HackersFriend News Aggregator</h1>
+           <a href="/" class="btn btn-danger">Refresh News</a>
+        </form>
+    </center>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                    <h3 class="text-centre"> News from Times of india</h3>
+                    {% for n in toi_news %}
+                    <h5> -  {{n}} </h5>
+                    <hr>
+                    {% endfor %}
+                    <br>
+            </div>
+            <div class="col-6">
+                    <h3 class="text-centre">News from Hindustan times</h3>
+                    {% for htn in ht_news %}
+                    <h5> - {{htn}} </h5>
+                    <hr>
+                    {% endfor %}
+                    <br>
+            </div>
+        </div>
+ 
+ 
+</div>
+    <script
+src="http://code.jquery.com/jquery-3.3.1.min.js"
+integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
